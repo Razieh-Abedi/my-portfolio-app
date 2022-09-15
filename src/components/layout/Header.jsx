@@ -5,7 +5,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 function Header() {
   return (
-    <div className="container d-flex justify-content-between align-items-center">
+    <div className="container d-flex justify-content-between align-items-center my-5">
       <div className="navbar navbar-expand-lg">
         <div className="container-fluid">
           {/* <a className="navbar-brand" href="#">
@@ -23,13 +23,15 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button> */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item ms-3">
-                <button className="btn btn-light">Resume</button>
+                <button className="btn btn-outline-light headerBtn">
+                  Resume
+                </button>
               </li>
-              <li className="nav-item ms-3">About</li>
-              <li className="nav-item ms-3">Experience</li>
-              <li className="nav-item ms-3">Work</li>
+              <li className="nav-item ms-3 headerTopic">About</li>
+              <li className="nav-item ms-3 headerTopic">Experience</li>
+              <li className="nav-item ms-3 headerTopic">Work</li>
               {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
@@ -52,7 +54,7 @@ function Header() {
             href="https://github.com/Razieh-Abedi"
             className="d-flex align-items-center justify-content-center"
           >
-            <FaGithub />
+            <FaGithub className="headericon" />
           </a>
         </li>
         <li className="ms-3">
@@ -60,16 +62,16 @@ function Header() {
             href="https://www.linkedin.com/in/razieh-abedi-45674b226/"
             className="d-flex align-items-center justify-content-center"
           >
-            <FaLinkedin />
+            <FaLinkedin className="headericon" />
           </a>
         </li>
         <li className="ms-3">
           {" "}
           <a
-            href="#"
+            href="0060175286004"
             className="d-flex align-items-center justify-content-center"
           >
-            <RiWhatsappFill />
+            <RiWhatsappFill className="headericon" />
           </a>
         </li>
         <li className="ms-3">
@@ -78,7 +80,7 @@ function Header() {
             href="http://raziwebdeveloper.com/"
             class="d-flex align-items-center justify-content-center"
           >
-            <FaGlobe />
+            <FaGlobe className="headericon" />
           </a>
         </li>
       </ul>
