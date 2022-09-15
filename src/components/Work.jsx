@@ -1,31 +1,19 @@
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import Projects from "./Projects";
+import projectData from "../projectData";
 
 function Work() {
   return (
     <section className="vh-100">
-      <h2 className="text-center">
+      <h2 className="text-center mb-5">
         <span className="number">02. </span>
         <span>Some works I have done</span>
       </h2>
       <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="card project text-center">
-              <div className="card-body">
-                <h5 className="card-title title">Shopping Website</h5>
-                <h6 className="card-subtitle mb-2 text-muted">
-                  Headphone shopping
-                </h6>
-                <p className="card-text">
-                  This is a sample shopping website with a shopping cart.
-                </p>
-                <a href="https://razieh-abedi.github.io/shopping-cart/">
-                  <FaExternalLinkAlt className="link" />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="row row-cols-1 row-cols-md-3  row-cols-lg-4 g-3">
+          {projectData.map((item) => (
+            <Projects key={item.id} {...item}/>
+          ))}
         </div>
       </div>
     </section>

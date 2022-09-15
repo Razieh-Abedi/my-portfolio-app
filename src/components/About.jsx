@@ -4,7 +4,7 @@ import profile from "../assets/images/profile-pic.jpg";
 function About() {
   return (
     <section className="vh-100">
-      <h2 className="text-center">
+      <h2 className="text-center mb-5">
         <span className="number">01. </span>
         <span>About Me</span>
       </h2>
