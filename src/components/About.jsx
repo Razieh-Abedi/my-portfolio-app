@@ -10,7 +10,7 @@ function About() {
       </h2>
       <div className="container">
         <div className="row align-items-center justify-content-between">
-          <div className="col col-8 about-col">
+          <div className="col col-12 col-md-8 about-col">
             <h6>Hi, my name is</h6>
             <h1 className="ps-5 display-1">Razieh Abedi</h1>
             <h2 className="pt-3">I'm a web developer.</h2>
@@ -20,7 +20,7 @@ function About() {
               on building accessible, human-centered products at Upstatement.
             </p>
           </div>
-          <div className="col col-4 about-col">
+          <div className="col col-12 col-md-4 about-col">
             <img src={profile} alt="Razi" className="h-100 w-100 rounded" />
           </div>
         </div>

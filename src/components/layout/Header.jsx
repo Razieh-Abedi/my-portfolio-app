@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
-//import { MdEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+// import ReactWhatsapp from "react-whatsapp";
 import { RiWhatsappFill } from "react-icons/ri";
 
 function Header() {
@@ -25,9 +26,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item ms-3">
-                <button className="btn btn-outline-light headerBtn">
-                  Resume
-                </button>
+                <button className="btn btn-outline-light webBtn">Resume</button>
               </li>
               <li className="nav-item ms-3 headerTopic">About</li>
               <li className="nav-item ms-3 headerTopic">Experience</li>
@@ -66,12 +65,20 @@ function Header() {
           </a>
         </li>
         <li className="ms-3">
-          {" "}
           <a
-            href="0060175286004"
+            href="https://api.whatsapp.com/send?phone=60175286004"
             className="d-flex align-items-center justify-content-center"
           >
             <RiWhatsappFill className="headericon" />
+            {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" className="headericon"/> */}
+          </a>
+        </li>
+        <li className="ms-3">
+          <a
+            href="mailto:raziyeabedi@gmail.com"
+            className="d-flex align-items-center justify-content-center"
+          >
+            <MdEmail className="headericon" />
           </a>
         </li>
         <li className="ms-3">
