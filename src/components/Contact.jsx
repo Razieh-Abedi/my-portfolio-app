@@ -6,17 +6,16 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section className="vh-100">
+    <section className="vh-100 contactSection">
       <h2 className="text-center mb-5">
         <span className="number">03. </span>
         <span>Get in touch with me</span>
       </h2>
-      <div className="container">
-        <div className="row row-cols-1 row-cols-md-2">
+      <div className="container contactContainer">
+        <div className="row row-cols-1 row-cols-md-2 g-1">
           <div className="col">
-            {" "}
             <ul className="text-center list-unstyled">
-              <li>
+              <li className="d-flex align-items-center mb-2">
                 <RiWhatsappFill className="me-3 contactIcon" />
                 <a
                   href="https://api.whatsapp.com/send?phone=60175286004"
@@ -25,7 +24,7 @@ function Contact() {
                   Send me a message on WhatsApp
                 </a>
               </li>
-              <li>
+              <li className="d-flex align-items-center mb-2">
                 <MdEmail className="me-3 contactIcon" />
                 <a
                   href="mailto:raziyeabedi@gmail.com"
@@ -34,7 +33,7 @@ function Contact() {
                   Send me an email
                 </a>
               </li>
-              <li>
+              <li className="d-flex align-items-center mb-2">
                 <FaGithub className="me-3 contactIcon" />
                 <a
                   href="https://github.com/Razieh-Abedi"
@@ -43,7 +42,7 @@ function Contact() {
                   Follow me on GitHub
                 </a>
               </li>
-              <li>
+              <li className="d-flex align-items-center mb-2">
                 {" "}
                 <FaLinkedin className="me-3 contactIcon" />
                 <a

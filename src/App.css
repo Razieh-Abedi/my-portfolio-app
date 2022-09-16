@@ -74,8 +74,14 @@ h2 {
 }
 .contactLink {
   color: #c1caeb;
-  font-size: 1.3rem;
+  /* font-size: 1.2rem; */
 }
 .contactLink:hover {
   color: #64ffda;
+}
+.contactContainer {
+  padding: 8rem !important;
+}
+.contactSection {
+  padding: 15rem !important;
 }
