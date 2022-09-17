@@ -79,9 +79,6 @@ h2 {
 .contactLink:hover {
   color: #64ffda;
 }
-.contactContainer {
-  padding: 8rem !important;
-}
-.contactSection {
-  padding: 15rem !important;
+.contactLine {
+  color: #64ffda;
 }
