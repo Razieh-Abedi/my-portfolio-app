@@ -5,7 +5,7 @@ function Experience() {
   // const { experience } = useParams;
   return (
     <section className="py-2 py-md-5" id="experience">
-      <h2 className="text-center mb-5">
+      <h2 className="text-center  mb-3 mb-md-5">
         <span className="number">02. </span>
         <span>Some works I have done</span>
       </h2>

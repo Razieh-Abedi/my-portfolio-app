@@ -6,7 +6,7 @@ function Work() {
   const [isShowMore, setIsShowMore] = useState(false);
   return (
     <section className="py-2 py-md-5">
-      <h2 className="text-center mb-5">
+      <h2 className="text-center  mb-3 mb-md-5">
         <span className="number">03. </span>
         <span>Some works I have done</span>
       </h2>

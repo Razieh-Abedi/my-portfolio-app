@@ -4,7 +4,7 @@ import profile from "../assets/images/profile-pic.jpg";
 function About() {
   return (
     <section className="py-2 py-md-5" id="about">
-      <h2 className="text-center mb-5">
+      <h2 className="text-center  mb-3 mb-md-5">
         <span className="number">01. </span>
         <span>About Me</span>
       </h2>
