@@ -17,7 +17,7 @@ function Contact() {
             <div className="col">
               <ul className="text-center list-unstyled">
                 <li className="d-flex align-items-center mb-2">
-                  <RiWhatsappFill className="me-3 contactIcon" />
+                  <RiWhatsappFill className="me-1 contactIcon" />
                   <a
                     href="https://api.whatsapp.com/send?phone=60175286004"
                     className="text-decoration-none contactLink"
@@ -26,7 +26,7 @@ function Contact() {
                   </a>
                 </li>
                 <li className="d-flex align-items-center mb-2">
-                  <MdEmail className="me-3 contactIcon" />
+                  <MdEmail className="me-1 contactIcon" />
                   <a
                     href="mailto:raziyeabedi@gmail.com"
                     className="text-decoration-none contactLink"
@@ -39,7 +39,7 @@ function Contact() {
             <div className="col">
               <ul className="text-center list-unstyled">
                 <li className="d-flex align-items-center mb-2">
-                  <FaGithub className="me-3 contactIcon" />
+                  <FaGithub className="me-1 contactIcon" />
                   <a
                     href="https://github.com/Razieh-Abedi"
                     className="text-decoration-none contactLink"
@@ -49,7 +49,7 @@ function Contact() {
                 </li>
                 <li className="d-flex align-items-center mb-2">
                   {" "}
-                  <FaLinkedin className="me-3 contactIcon" />
+                  <FaLinkedin className="me-1 contactIcon" />
                   <a
                     href="https://www.linkedin.com/in/razieh-abedi-45674b226/"
                     className="text-decoration-none contactLink"
@@ -64,7 +64,7 @@ function Contact() {
         <hr className="w-75 mx-auto contactLine" />
         <div className="pt-2">
           <p>
-            <FaChevronCircleRight className="me-3 contactIcon" />
+            <FaChevronCircleRight className="me-1 contactIcon" />
             Email address: raziyeabedi@gmail
           </p>
           <a

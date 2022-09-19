@@ -3,8 +3,11 @@ import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 // import ReactWhatsapp from "react-whatsapp";
 import { RiWhatsappFill } from "react-icons/ri";
+// import { Link, useParams } from "react-router-dom";
+// import { HashLink } from "react-router-hash-link";
 
 function Header() {
+  // const { aboutId, experienceId } = useParams();
   return (
     <div className="container d-flex justify-content-between align-items-center my-5">
       <div className="navbar navbar-expand-lg">
@@ -28,8 +31,18 @@ function Header() {
               <li class="nav-item ms-3">
                 <button className="btn btn-outline-light webBtn">Resume</button>
               </li>
-              <li className="nav-item ms-3 headerTopic">About</li>
-              <li className="nav-item ms-3 headerTopic">Experience</li>
+              <li className="nav-item ms-3 headerTopic">
+                {/* <Link to="#/aboutId" id={aboutId}>
+                  About
+                </Link> */}
+                About
+              </li>
+              <li className="nav-item ms-3 headerTopic">
+                {/* <HashLink smooth to="/#experience">
+                  Experience
+                </HashLink> */}{" "}
+                Experinece
+              </li>
               <li className="nav-item ms-3 headerTopic">Work</li>
               {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

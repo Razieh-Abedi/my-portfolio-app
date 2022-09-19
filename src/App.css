@@ -43,8 +43,8 @@ h2 {
   color: #64ffda;
 }
 .about-col {
-  height: 25rem;
-  width: 35rem;
+  height: 20rem;
+  /* width: 35rem; */
 }
 
 .project {
