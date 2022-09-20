@@ -14,7 +14,7 @@ function Header() {
     <div className="container my-5 ">
       <div className="d-flex justify-content-between">
         <div className="navSitemenu">
-          <ul className="d-md-flex list-unstyled">
+          <ul className="d-none d-md-flex list-unstyled me-3">
             <li class="nav-item ms-3 mt-3 mt-md-0">
               <button className="btn btn-outline-light webBtn">Resume</button>
             </li>
@@ -33,14 +33,36 @@ function Header() {
             <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
           </ul>
         </div>
-        <div className="navMenuBtn position-fixed top-0 left-0 ms-3  mt-3 d-block d-md-none">
+        <div className="d-block d-md-none">
           <button
-            className="rounded-circle bg-dark px-2"
+            className="rounded-circle bg-dark position-fixed top-0 left-0 "
             onClick={() => setIsDropdownMenu(!isDropdownMenu)}
           >
             <AiOutlineMenu className="navMenuIcon" />
           </button>
+          <ul
+            className={`list-unstyled ps-2 pe-4
+                 ${isDropdownMenu ? "d-none" : "d-block"}`}
+          >
+            <li class="nav-item ms-3 mt-3 mt-md-0">
+              <button className="btn btn-outline-light webBtn">Resume</button>
+            </li>
+            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
+              {/* <Link to="#/aboutId" id={aboutId}>
+                  About
+                </Link> */}
+              About
+            </li>
+            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
+              {/* <HashLink smooth to="/#experience">
+                  Experience
+                </HashLink> */}{" "}
+              Experinece
+            </li>
+            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
+          </ul>
         </div>
+
         <div className="socialIconLinks">
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
