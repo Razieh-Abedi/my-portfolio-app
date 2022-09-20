@@ -24,6 +24,9 @@ code {
 .headerTopic:hover {
   color: #64ffda;
 }
+.navMenuIcon {
+  color: #64ffda;
+}
 .headericon {
   color: #64ffda;
   transform: scale(1);

@@ -12,9 +12,9 @@ function Contact() {
         <span>Get in touch with me</span>
       </h2>
       <div className="container px-4 ">
-        <div className="row row-cols-1 row-cols-md-2">
-          <div className="col">
-            <ul className="list-unstyled  d-block w-75 mx-auto">
+        <div className="d-bleck d-md-flex justify-content-around ">
+          <div className="">
+            <ul className="list-unstyled">
               <li className="mb-2">
                 <RiWhatsappFill className="me-1 contactIcon" />
                 <a
@@ -35,8 +35,8 @@ function Contact() {
               </li>
             </ul>
           </div>
-          <div className="col">
-            <ul className="list-unstyled d-block w-75 mx-auto">
+          <div className="">
+            <ul className="list-unstyled ">
               <li className="mb-2">
                 <FaGithub className="me-1 contactIcon" />
                 <a
@@ -62,19 +62,17 @@ function Contact() {
         </div>
 
         <hr className="w-75 mx-auto contactLine" />
-        <div className="row">
-          <div className="col text-center">
-            <p>
-              <FaChevronCircleRight className="me-1 contactIcon" />
-              Email address: raziyeabedi@gmail
-            </p>
-            <a
-              href="https://raziwebdeveloper.com/"
-              className="text-decoration-none contactLink"
-            >
-              Developed with ❤ by raziwebdeveloper.com
-            </a>
-          </div>
+        <div className="text-center">
+          <p>
+            <FaChevronCircleRight className="me-1 contactIcon" />
+            Email address: raziyeabedi@gmail
+          </p>
+          <a
+            href="https://raziwebdeveloper.com/"
+            className="text-decoration-none contactLink"
+          >
+            Developed with ❤ by raziwebdeveloper.com
+          </a>
         </div>
       </div>
     </section>
