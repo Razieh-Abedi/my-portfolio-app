@@ -16,7 +16,7 @@ code {
 
 /* Custome Css */
 .dropdownContent {
-  background-color: #112240 ;
+  background-color: #112240;
 }
 .webBtn {
   background-color: #112240;
@@ -87,4 +87,41 @@ h2 {
 }
 .contactLine {
   color: #64ffda;
+}
+/* .btnContainer {
+  /* display: flex; */
+
+/* @media (min-width: 992px) {
+  .btnContainer {
+    display: flex;
+    flex-direction: column !important;
+
+    justify-content: center;
+  }
+} */
+.jobBtn {
+  /* background: transparent;
+  border-color: transparent; */
+  color: #c1caeb;
+  text-transform: capitalize;
+  border-color: transparent;
+  background-color: #112240;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  padding: 0.25rem 2rem;
+  line-height: 1;
+}
+.activeJobBtn {
+  box-shadow: -6px 0px 0px 0px red !important;
+  background-color: #64ffda !important;
+}
+
+.jobIcon {
+  color: #64ffda;
+  font-size: 2.7rem !important;
+}
+
+.companyBtn {
+  background-color: #112240;
 }
