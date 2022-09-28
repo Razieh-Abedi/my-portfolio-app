@@ -3,14 +3,14 @@ import profile from "../assets/images/profile-pic.jpg";
 import { TiChevronRight } from "react-icons/ti";
 function About() {
   return (
-    <section className="py-2 py-md-5">
+    <section className="py-4 py-md-5">
       <h2 className="text-center  mb-3 mb-md-5">
         <span className="number">01. </span>
         <span>About Me</span>
       </h2>
-      <div className="container px-4">
+      <div className="container">
         <div className="row">
-          <div className="col col-12 col-md-8 about-col">
+          <div className="col col-12 col-md-8 aboutCol">
             <h6>Hi, my name is</h6>
             <h1 className="ps-5 display-1">Razieh Abedi</h1>
             <h2 className="pt-3">I'm a web developer.</h2>
@@ -76,7 +76,7 @@ function About() {
             </div>
           </div>
           <div className="col col-12 col-md-4 about-col">
-            <img src={profile} alt="Razi" className="h-100 rounded" />
+            <img src={profile} alt="Razi" className="h-100 w-100 rounded mt-3" />
           </div>
         </div>
       </div>

@@ -48,10 +48,9 @@ h2 {
 .number {
   color: #64ffda;
 }
-.about-col {
+/* .aboutCol {
   height: 20rem;
-  /* width: 35rem; */
-}
+} */
 
 .project {
   height: 13rem !important;
@@ -97,7 +96,7 @@ h2 {
     width: 13% !important;
   }
   .jobIcon {
-    font-size: 1rem !important;
+    font-size: 0.7rem !important;
   }
   .jobInfo {
     width: 75%;
@@ -118,7 +117,7 @@ h2 {
 .jobIcon {
   color: #64ffda;
   /* font-size: 2.7rem !important; */
-  font-size: 1rem !important;
+  font-size: 0.5rem ;
 }
 
 .companyBtn {

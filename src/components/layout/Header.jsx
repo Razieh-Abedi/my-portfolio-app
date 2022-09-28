@@ -40,6 +40,7 @@ function Header() {
               Experinece
             </li>
             <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
+            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Contact</li>
           </ul>
         </div>
         <div className="d-inline-flex d-md-flex justify-content-between">
@@ -61,6 +62,9 @@ function Header() {
                 Experinece
               </li>
               <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
+              <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
+                Contact
+              </li>
             </ul>
           </div>
           <div className="socialIconLinks pt-4 pt-md-0">
