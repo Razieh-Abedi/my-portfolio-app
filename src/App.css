@@ -97,7 +97,7 @@ h2 {
     width: 13% !important;
   }
   .jobIcon {
-    font-size: 2rem !important;
+    font-size: 1rem !important;
   }
   .jobInfo {
     width: 75%;
@@ -118,12 +118,11 @@ h2 {
 .jobIcon {
   color: #64ffda;
   /* font-size: 2.7rem !important; */
-  font-size: 5rem;
+  font-size: 1rem !important;
 }
 
 .companyBtn {
   background-color: #112240;
-  /* width: 13%; */
 }
 .jobInfo {
   width: 95%;
