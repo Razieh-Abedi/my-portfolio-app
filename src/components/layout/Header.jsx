@@ -11,7 +11,7 @@ function Header() {
   const [isDropdownMenu, setIsDropdownMenu] = useState(false);
 
   return (
-    <section className="py- py-md-5">
+    <section className="py-md-5">
       <div className="container">
         <button
           className="rounded-circle bg-dark position-relative top-0 left-0 mt-4 me-4 d-inline d-md-none"
@@ -63,7 +63,7 @@ function Header() {
               <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
             </ul>
           </div>
-          <div className="socialIconLinks">
+          <div className="socialIconLinks pt-4 pt-md-0">
             <ul className="list-unstyled d-flex">
               <li className="ms-3">
                 <a

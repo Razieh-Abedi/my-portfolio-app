@@ -13,14 +13,14 @@ function Experience() {
         <span className="number">02. </span>
         <span>Some works I have done</span>
       </h2>
-      <main className="d-md-flex container justify-content-between">
-        <div className="btnContainer w-25 py-4 ">
+      <main className="d-block d-md-flex container justify-content-md-between">
+        <div className="btnContainer py-2 py-md-5 d-flex d-md-block justify-content-between">
           {ExperienceData.map((item, index) => {
             return (
               <button
                 key={item.id}
                 onClick={() => setValue(index)}
-                className={`mt-3 mx-auto btn btn-outline-light d-block jobBtn ${
+                className={`mt-3 mx-auto rounded d-block jobBtn ${
                   index === value ? "activeJobBtn" : ""
                 }`}
               >
@@ -29,18 +29,22 @@ function Experience() {
             );
           })}
         </div>
-        <div className="w-75 ">
+        <div className="jobInfo">
           <h3>{title}</h3>
-          <h5 className="btn btn-outline-light companyBtn">{company}</h5>
-          <p className="text-black-50">{dates}</p>
+          <div className="d-flex d-md-block justify-content-start align-items-center py-3">
+            <h6 className="border border-0 companyBtn p-1 ps-2 rounded">
+              {company}
+            </h6>
+            <h6 className="ms-2">{dates}</h6>
+          </div>
           {duties.map((duty, index) => {
             return (
               <div
                 key={index}
-                className="d-flex align-items-center justify-content-start"
+                className="d-flex align-items-start justify-content-start"
               >
                 <TiChevronRight className="jobIcon me-2" />
-                <p className="jobInfo">{duty}</p>
+                <p className="text-break">{duty}</p>
               </div>
             );
           })}
