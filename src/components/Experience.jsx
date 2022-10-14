@@ -11,7 +11,7 @@ function Experience() {
     <section className="py-2 py-md-5">
       <h2 className="text-center  mb-3 mb-md-5">
         <span className="number">02. </span>
-        <span>Some works I have done</span>
+        <span>My Experience</span>
       </h2>
       <main className="d-block d-md-flex container justify-content-md-between">
         <div className="btnContainer py-2 py-md-5 d-flex d-md-block justify-content-between">

@@ -1,119 +1,55 @@
-import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { RiWhatsappFill } from "react-icons/ri";
-import { AiOutlineMenu } from "react-icons/ai";
-// import { Link, useParams } from "react-router-dom";
-// import { HashLink } from "react-router-hash-link";
+import React, { useState, useEffect, useRef } from "react";
+import { FaBars } from "react-icons/fa";
+import { social, links } from "../data";
 
 function Header() {
-  // const { aboutId, experienceId } = useParams();
-  const [isDropdownMenu, setIsDropdownMenu] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = "0px";
+    }
+  }, [showLinks]);
 
   return (
-    <section className="py-md-5">
-      <div className="container">
-        <button
-          className="rounded-circle bg-dark position-relative top-0 left-0 mt-4 me-4 d-inline d-md-none"
-          onClick={() => setIsDropdownMenu(!isDropdownMenu)}
-        >
-          <AiOutlineMenu className="navMenuIcon" />
-        </button>
-        <div className="dropdownContent position-absolute">
-          <ul
-            className={`list-unstyled ps-2 pe-4 pt-3 flex-column
-                 ${isDropdownMenu ? "d-flex" : "d-none"}`}
-          >
-            <li class="nav-item ms-3 mt-3 mt-md-0">
-              <button className="btn btn-outline-light webBtn">Resume</button>
-            </li>
-            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
-              {/* <Link to="#/aboutId" id={aboutId}>
-                  About
-                </Link> */}
-              About
-            </li>
-            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
-              {/* <HashLink smooth to="/#experience">
-                  Experience
-                </HashLink> */}{" "}
-              Experinece
-            </li>
-            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
-            <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Contact</li>
+    <nav>
+      <div className="Navcontainer">
+        <div className="navHeader">
+          <button className="navToggle" onClick={toggleLinks}>
+            <FaBars />
+          </button>
+        </div>
+        <div className="linksContainer" ref={linksContainerRef}>
+          <ul className="links" ref={linksRef}>
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id} href={url} className="ms-3">
+                  {text}
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="d-inline-flex d-md-flex justify-content-between">
-          <div className="navSitemenu">
-            <ul className="d-none d-md-flex list-unstyled me-3">
-              <li class="nav-item ms-3 mt-3 mt-md-0">
-                <button className="btn btn-outline-light webBtn">Resume</button>
+        <ul className="socialIcons">
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <li key={id} href={url} className="ms-3">
+                {icon}
               </li>
-              <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
-                {/* <Link to="#/aboutId" id={aboutId}>
-                  About
-                </Link> */}
-                About
-              </li>
-              <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
-                {/* <HashLink smooth to="/#experience">
-                  Experience
-                </HashLink> */}{" "}
-                Experinece
-              </li>
-              <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">Work</li>
-              <li className="nav-item ms-3 mt-3 mt-md-0 headerTopic">
-                Contact
-              </li>
-            </ul>
-          </div>
-          <div className="socialIconLinks pt-4 pt-md-0">
-            <ul className="list-unstyled d-flex">
-              <li className="ms-3">
-                <a
-                  href="https://github.com/Razieh-Abedi"
-                  className="d-flex align-items-center justify-content-center"
-                >
-                  <FaGithub className="headericon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a
-                  href="https://www.linkedin.com/in/razieh-abedi-45674b226/"
-                  className="d-flex align-items-center justify-content-center"
-                >
-                  <FaLinkedin className="headericon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a
-                  href="https://api.whatsapp.com/send?phone=60175286004"
-                  className="d-flex align-items-center justify-content-center"
-                >
-                  <RiWhatsappFill className="headericon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a
-                  href="mailto:raziyeabedi@gmail.com"
-                  className="d-flex align-items-center justify-content-center"
-                >
-                  <MdEmail className="headericon" />
-                </a>
-              </li>
-              <li className="ms-3">
-                <a
-                  href="http://raziwebdeveloper.com/"
-                  class="d-flex align-items-center justify-content-center"
-                >
-                  <FaGlobe className="headericon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+            );
+          })}
+        </ul>
       </div>
-    </section>
+    </nav>
   );
 }
 

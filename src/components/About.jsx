@@ -17,7 +17,7 @@ function About() {
 
             <p className="p-3">
               I’m a certified, determined, and productive front-end web
-              developer with a passion for creative solutions. I develope,
+              developer with a passion for creative solutions. I develop,
               create, and design responsive websites and web applications using
               the following technologies:
             </p>
